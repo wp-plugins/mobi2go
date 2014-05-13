@@ -31,7 +31,7 @@ or prepay by credit card.
 Our mobile ordering supports both Android and iOS and can be customised to match the look and feel of
 your brand, while providing customers the freedom to order from your stores while on the go.
 
-Check out examples of our work and start your 30 day free trial at: www.mobi2go.com
+Check out examples of our work and start your 30 day free trial at: [www.mobi2go.com](http://www.mobi2go.com/?utm_source=wordpress&utm_medium=description&utm_campaign=wordpress-plugin)
 
 == Installation ==
 
@@ -48,7 +48,7 @@ Refer the section below that relates to you.
 
 ** New Mobi2Go Users **
 
-1. [Sign Up](http://mobi2go.com/signup)
+1. [Sign Up](http://www.mobi2go.com/signup?utm_source=wordpress&utm_medium=installation&utm_campaign=wordpress-plugin)
 2. Setup your Mobi2Go account
 3. Upload `mobi2go.zip` to the `/wp-content/plugins/` directory
 4. Unzip `mobi2go.zip`
