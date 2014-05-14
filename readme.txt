@@ -1,7 +1,7 @@
 === Mobi2Go ===
 Contributors: chtombleson
 Donate link: http://mobi2go.com
-Tags: ecommerce, online ordering, mobi2go, cafe, restaurant, bar, fastfood
+Tags: ecommerce, online ordering, mobi2go, cafe, restaurant, bar, fastfood, food, order online, restaurant, shopping cart, menu
 Requires at least: 3.0.0
 Tested up to: 3.8.1
 Stable tag: trunk
