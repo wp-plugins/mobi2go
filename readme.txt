@@ -63,8 +63,10 @@ For any questions you may have go to [support.mobi2go.com](http://support.mobi2g
 
 == Screenshots ==
 
-1. Screenshot of Mobi2Go Plugin in action.
-2. Mobi2Go Settings page.
+1. Mobi2Go's ordering pages integrate effortlessly with your Wordpress site to provide a clean, branded ordering solution to customers.
+2. Menu items are easily managed and provide easy customisation of selected items.
+3. The Mobi2Go plugin automatically renders the online ordering for mobile devices providing an 'app like' experience to your customers.
+4. Get up and running with the Mobi2Go Plugin with only two settings.
 
 == Changelog ==
 
