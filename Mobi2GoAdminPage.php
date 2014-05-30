@@ -51,10 +51,26 @@ class Mobi2GoAdminPage {
 
     public function page() {
         $this->options = get_option('mobi2go-settings');
+
+        if (isset($_GET['tab'])) {
+            if (in_array($_GET['tab'], array('settings', 'sign-up'))) {
+                $active_tab = $_GET['tab'];
+            } else {
+                $active_tab = 'settings';
+            }
+        } else {
+            $active_tab = 'settings';
+        }
         ?>
         <div class="wrap">
             <img src="<?php echo plugin_dir_url(__FILE__) . 'images/Mobi2Go-banner.png' ?>" />
             <h2>Mobi2Go Settings</h2>
+
+            <h2 class="nav-tab-wrapper">
+                <a href="?page=mobi2go&tab=settings" class="nav-tab">Settings</a>
+                <a href="?page=mobi2go&tab=sign-up" class="nav-tab">Sign Up</a>
+            </h2>
+            <?php if ($active_tab == 'settings'): ?>
             <form method="post" action="options.php">
                 <?php
                     settings_fields('mobi2go');
@@ -62,29 +78,33 @@ class Mobi2GoAdminPage {
                     submit_button();
                 ?>
             </form>
+            <?php elseif ($active_tab == 'sign-up'): ?>
+            <div style="margin-top: 5px;">&nbsp;</div>
+            <iframe style="width: 100%; height: 770px;" src="http://www.mobi2go.com/signup?utm_source=wordpress&utm_medium=settings&utm_campaign=wordpress-plugin" scrolling="no"></iframe>
+            <?php endif; ?>
         </div>
         <?php
     }
 
     public function print_section_info() {
+        echo '<div style="margin-top: 5px;">&nbsp;</div>';
         echo '<p class="description">';
-        echo 'To use this plugin you will first need to set up an account for Mobi2go,';
-        echo '<a href="http://www.mobi2go.com/signup?utm_source=wordpress&utm_medium=installation&utm_campaign=wordpress-plugin" target="_blank">here</a>.<br />';
-        echo 'Then enter in your site name (eg. examplesite).';
+        echo 'To use this plugin you will first need to create a Store with Mobi2Go and then enter your Site Name below.<br />';
+        echo 'You can sign-up for a 30 day free trial ';
+        echo '<a href="http://www.mobi2go.com/signup?utm_source=wordpress&utm_medium=settings&utm_campaign=wordpress-plugin" target="_blank">here</a>.<br />';
         echo '</p>';
         echo '<p class="description">';
-        echo 'Create a new page and add this tag [mobi2go] to the content and publish the page.<br />';
-        echo 'Mobi2Go will now be on that page.';
+        echo 'To add to your Wordpress site create a new page and add the tag [mobi2go] to the content and publish the page.';
         echo '</p>';
     }
 
     public function sitename_callback() {
         printf(
-            '<input type="text" id="site" name="mobi2go-settings[site]" value="%s" />',
+            '<input type="text" id="site" name="mobi2go-settings[site]" value="%s" /><label>.mobi2go.com</label>',
             empty($this->options['site']) ? '' : $this->options['site']
         );
         echo '<p class="description">
-            Site name from console.
+            Site Name from console.
         </p>';
     }
 
