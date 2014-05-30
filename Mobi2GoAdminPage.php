@@ -68,7 +68,8 @@ class Mobi2GoAdminPage {
 
     public function print_section_info() {
         echo '<p class="description">';
-        echo 'To use this plugin you will first need to set up an account for Mobi2go, <a href="http://www.mobi2go.com/signup" target="_blank">here</a>.<br />';
+        echo 'To use this plugin you will first need to set up an account for Mobi2go,';
+        echo '<a href="http://www.mobi2go.com/signup?utm_source=wordpress&utm_medium=installation&utm_campaign=wordpress-plugin" target="_blank">here</a>.<br />';
         echo 'Then enter in your site name (eg. examplesite).';
         echo '</p>';
         echo '<p class="description">';
