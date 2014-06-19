@@ -8,7 +8,7 @@
 * Author URI: http://mobi2go.com
 */
 
-require_once(__DIR__ . '/Mobi2GoAdminPage.php');
+require_once(dirname(__FILE__) . '/Mobi2GoAdminPage.php');
 
 /*
 * Only load the admin page if user has admin permissions
