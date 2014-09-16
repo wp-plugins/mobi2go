@@ -3,7 +3,7 @@ Contributors: chtombleson
 Donate link: http://mobi2go.com
 Tags: ecommerce, online ordering, mobi2go, cafe, restaurant, bar, fastfood, food, order online, restaurant, shopping cart, menu
 Requires at least: 3.0.0
-Tested up to: 3.9.1
+Tested up to: 4.0
 Stable tag: trunk
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
