@@ -80,7 +80,7 @@ class Mobi2GoAdminPage {
             </form>
             <?php elseif ($active_tab == 'sign-up'): ?>
             <div style="margin-top: 5px;">&nbsp;</div>
-            <iframe style="width: 100%; height: 770px;" src="http://www.mobi2go.com/signup?utm_source=wordpress&utm_medium=settings&utm_campaign=wordpress-plugin" scrolling="no"></iframe>
+            <iframe style="width: 100%; height: 770px;" src="http://www.mobi2go.com/signup?utm_source=wordpress&utm_medium=settings&utm_campaign=wordpress-plugin" scrolling="yes"></iframe>
             <?php endif; ?>
         </div>
         <?php
